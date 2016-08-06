@@ -1,0 +1,59 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div id="holder">
+	<button id="newgrid" class="btn btn-primary">Regridilize!</button>
+	<div id="grid">
+		
+
+	</div>
+
+
+	</div>
+
+
+</body>
+<style type="text/css">
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	#newgrid {
+		width: 400px;
+		height: 15%;
+		font-size: 3em;
+		font-family: 'Passion One', cursive;
+		margin: 20px;
+		border: 2px solid gainsboro;
+		border-radius: 2px;
+
+	}
+	#holder {
+		width: 100%;
+		height: 100vh;
+		background-image: url(http://www.1wallpaperhd.com/wp-content/uploads/3D/FTP1/1920x1080/3D%20grid%20wall%20Wallpapers%20HD%201920x1080.jpg);
+		text-align: center;
+	}
+
+</style>
+<script>
+	$(document).ready(function() {
+		$( "#newgrid" ).click(function() {
+			$("#newgrid").hide(1500);
+			$("#newgrid").show(1000);
+			var width =prompt("How many across?");
+			var length =prompt("How many down?");
+});
+
+
+
+
+	});
+
+
+
+
+</script>
