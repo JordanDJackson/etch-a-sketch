@@ -7,15 +7,9 @@
 	<div id="holder">
 	<button id="newgrid" class="btn btn-primary">Regridilize!</button>
 	<div id="grid" class="responsive">
-		
-
 	</div>
 <div id="holder">
-	
-
 	</div>
-
-
 </body>
 <style type="text/css">
 	* {
@@ -30,7 +24,6 @@
 		margin: 20px;
 		border: 2px solid gainsboro;
 		border-radius: 2px;
-
 	}
 	#holder {
 		width: 100%;
@@ -40,34 +33,25 @@
 		text-align: center;
 	}
 	.pix {
-		width: 50px;
-		height: 50px;
+		width: 25px;
+		height: 25px;
 		background-color: white;
 		margin: 0 auto;
 		display: inline-block;
 		border: 2px solid gainsboro;
 	}
-	.pix:hover {
-
-		/*background-color: red;*/
-	}
 	#grid {
-
 		height: 80vh;
 		margin: 0 auto
 	}
-	.hit {
-		background-color: red;
-	}
-
 </style>
 <script>
 	$(document).ready(function() {
 		$( "#newgrid" ).click(function() {
 			$("#newgrid").hide(1500);
 			$("#newgrid").show(1000);
-			var width =prompt("How many across? (Max of 30)");
-			var length =prompt("How many down? (Max of 30)");
+			var width =prompt("How many across? (Max of 60)");
+			var length =prompt("How many down? (Max of 60)");
 			$("#grid").html("");
 			for (i = 0 ; i < length; i++) {
 				for (j = 0 ; j < width; j++) {
@@ -79,17 +63,5 @@
 		$(document).on("mouseenter", ".pix", function() {
     $(this).css("background-color","aquamarine");
 });
-
-$(document).on("mouseleave", ".pix", function() {
-    // hover ends code here
-});
-
-
-
-
 	});
-
-
-
-
 </script>
