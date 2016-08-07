@@ -37,6 +37,14 @@
 		background-image: url(http://www.1wallpaperhd.com/wp-content/uploads/3D/FTP1/1920x1080/3D%20grid%20wall%20Wallpapers%20HD%201920x1080.jpg);
 		text-align: center;
 	}
+	.pix {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		background-color: white;
+		margin: 0 auto;
+		display: inline;
+	}
 
 </style>
 <script>
@@ -46,7 +54,17 @@
 			$("#newgrid").show(1000);
 			var width =prompt("How many across?");
 			var length =prompt("How many down?");
-});
+
+			for (i = 0 ; i < width; i++) {
+				for (j = 0 ; j < length; j++) {
+					$("#grid").append("<div class='pix'>HELLLOOOO   </div>");
+				}
+							$("#grid").append("<br>");
+
+			}
+
+
+		});
 
 
 
