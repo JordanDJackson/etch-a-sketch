@@ -6,7 +6,7 @@
 <body>
 	<div id="holder">
 	<button id="newgrid" class="btn btn-primary">Regridilize!</button>
-	<div id="grid">
+	<div id="grid" class="responsive">
 		
 
 	</div>
@@ -33,17 +33,24 @@
 	}
 	#holder {
 		width: 100%;
-		height: 100vh;
+		min-height: 100vh;
+		height: auto;
 		background-image: url(http://www.1wallpaperhd.com/wp-content/uploads/3D/FTP1/1920x1080/3D%20grid%20wall%20Wallpapers%20HD%201920x1080.jpg);
 		text-align: center;
+		background-size: cover;
 	}
 	.pix {
 		width: 50px;
 		height: 50px;
-		line-height: 50px;
 		background-color: white;
 		margin: 0 auto;
-		display: inline;
+		display: inline-block;
+		border: 2px solid gainsboro;
+	}
+	#grid {
+
+		height: 80vh;
+		margin: 0 auto
 	}
 
 </style>
@@ -52,12 +59,12 @@
 		$( "#newgrid" ).click(function() {
 			$("#newgrid").hide(1500);
 			$("#newgrid").show(1000);
-			var width =prompt("How many across?");
-			var length =prompt("How many down?");
-
-			for (i = 0 ; i < width; i++) {
-				for (j = 0 ; j < length; j++) {
-					$("#grid").append("<div class='pix'>HELLLOOOO   </div>");
+			var width =prompt("How many across? (Max of 20)");
+			var length =prompt("How many down? (Max of 20)");
+			$("#grid").html("");
+			for (i = 0 ; i < length; i++) {
+				for (j = 0 ; j < width; j++) {
+					$("#grid").append("<div class='pix'> hello </div>");
 				}
 							$("#grid").append("<br>");
 
